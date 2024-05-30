@@ -1,0 +1,36 @@
+{
+    "messages": {
+        "welcome": "Hello! Do /help to see the list of commands you can use."
+
+    },
+    "commands": {
+        "start": {
+            "commandName": "motivation",
+            "description": "Start sending motivation"
+        },
+        "addReminder": {
+            "commandName": "add reminder",
+            "description": "Add new reminder. Usage: add reminder <reminder>"
+        },
+        "removeReminder": {
+            "commandName": "remove reminder",
+            "description": "Remove selected reminder. Usage: remove reminder <reminder>"
+        },
+        "listReminder": {
+            "commandName": "list reminder",
+            "description": "Give the list of reminders in the list to be sent"
+        },
+        "setInterval": {
+            "commandName": "set interval",
+            "description": "Set the interval of message sending for each interval. Usage: set interval <seconds>"
+        },
+        "help":{
+            "commandName": "help",
+            "description": "See the list of commands available"
+        },
+        "todo": {
+            "commandName": "todo",
+            "description": "See the list of todo's the developer has to implement"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "todo": [
+        "Use index to remove the items in list reminders",
+        "Categorize reminders into 'Passive Income', 'Encouragement', 'Down times'",
+        "Make it so that each list unique to each users",
+        "Add test case to make it easy to test out bots, and also, add new features",
+        "Make the code more tidy"
+    ]
+}
