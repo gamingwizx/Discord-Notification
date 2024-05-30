@@ -31,6 +31,10 @@
         "todo": {
             "commandName": "todo",
             "description": "See the list of todo's the developer has to implement"
+        },
+        "stop": {
+            "commandName": "stop",
+            "description": "Stop sending messages"
         }
     }
 }

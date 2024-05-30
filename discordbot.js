@@ -3,10 +3,21 @@ const { reminders } = require("./reminders.json");
 const { todo } = require("./todo.json");
 const { messages, commands } = require("./messages.json");
 const { token, channelID, clientID } = require('./config.json');
+const express = require("express");
+const app = express();
+
 const fs = require('fs');
 
 let MESSAGE_INTERVAL = 5;
 
+
+app.get("/", (req, res) => {
+  res.send("Hello world");
+})
+
+app.listen(3000, () => {
+  console.log("Discord bot hosting");
+})
 //Setting it here so it can be cleared later on
 let interval;
 
@@ -54,6 +65,9 @@ client.on('messageCreate', async (message) => {
     } else if (message.content === commands.todo.commandName) {
       const list = beautifyList(todo);
       message.author.send(list)
+    } else if (message.content === commands.stop.commandName) {
+      clearInterval(interval)
+      message.author.send(`Successfully stop the sending of message`);
     }
   });
   
